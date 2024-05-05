@@ -1,0 +1,42 @@
+{
+  "name": "@dev-wiki/gha-tools",
+  "version": "0.0.0",
+  "description": "dev wiki github action tools",
+  "bin": "./bin/index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "changeset": "changeset",
+    "ci:version": "changeset version",
+    "ci:release": "changeset publish",
+    "snapshot-release": "changeset && changeset version --snapshot snapshot && pnpm install && pnpm ci:release --tag snapshot --no-git-tag --snapshot",
+    "changeset:empty": "changeset --empty"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev-wiki-kr/gha-tools"
+  },
+  "keywords": [],
+  "author": "hwangstar156",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 16"
+  },
+  "lint-staged": {
+    "{package.json, CHANGELOG.md}": [
+      "node './scripts/check-snapshot-commit.js'"
+    ]
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "@changesets/cli": "^2.27.1",
+    "discord.js": "^14.15.1",
+    "dotenv": "^16.3.1",
+    "dotenv-stringify": "^3.0.0",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2"
+  }
+}
