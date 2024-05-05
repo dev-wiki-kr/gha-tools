@@ -1,5 +1,11 @@
 # @dev-wiki-kr/gha-tools
 
+## 0.0.4
+
+### Patch Changes
+
+- baf3da0: embed block에 id, token 형태 추가
+
 ## 0.0.3
 
 ### Patch Changes

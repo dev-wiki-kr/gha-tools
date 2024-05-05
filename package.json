@@ -1,6 +1,6 @@
 {
   "name": "@dev-wiki-kr/gha-tools",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "dev wiki github action tools",
   "bin": "./bin/index.js",
   "scripts": {
