@@ -1,5 +1,5 @@
 {
-  "name": "@dev-wiki/gha-tools",
+  "name": "@dev-wiki-kr/gha-tools",
   "version": "0.0.0",
   "description": "dev wiki github action tools",
   "bin": "./bin/index.js",
@@ -11,9 +11,12 @@
     "snapshot-release": "changeset && changeset version --snapshot snapshot && pnpm install && pnpm ci:release --tag snapshot --no-git-tag --snapshot",
     "changeset:empty": "changeset --empty"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dev-wiki-kr/gha-tools"
+    "url": "https://github.com/dev-wiki-kr/gha-tools.git"
   },
   "keywords": [],
   "author": "hwangstar156",
