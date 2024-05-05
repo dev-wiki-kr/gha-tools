@@ -1,5 +1,11 @@
 # @dev-wiki-kr/gha-tools
 
+## 0.0.3
+
+### Patch Changes
+
+- aeb3312: embed block 형태 수정
+
 ## 0.0.2
 
 ### Patch Changes
