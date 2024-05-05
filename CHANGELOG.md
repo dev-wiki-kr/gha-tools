@@ -1,5 +1,11 @@
 # @dev-wiki-kr/gha-tools
 
+## 0.0.5
+
+### Patch Changes
+
+- 525e3d8: repository url 수정
+
 ## 0.0.4
 
 ### Patch Changes
