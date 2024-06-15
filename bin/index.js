@@ -7,6 +7,9 @@ const {
 } = argv;
 
 switch (command) {
+  case "inject-env":
+    require("../lib/inject-env")(argv);
+    break;
   case "notify-discord-bot":
     require("../lib/notify-discord-bot")(argv);
     break;
