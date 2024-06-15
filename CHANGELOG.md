@@ -1,5 +1,11 @@
 # @dev-wiki-kr/gha-tools
 
+## 0.1.0
+
+### Minor Changes
+
+- 5722c94: inject env 추가
+
 ## 0.0.5
 
 ### Patch Changes
